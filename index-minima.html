@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos -->   
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/icons/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Mínima" />
+    <link rel="manifest" href="assets/icons/favicon/site.webmanifest" />
+
+    <!-- Fontes --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <title>Minima Lista de Tarefas</title>
+</head>
+<body>
+    <div id="content">
+        <!-- Cabeçalho com titulo -->
+        <header>
+            <h1>Mínima Lista</h1>
+            <h2>Gerenciador de tarefas</h2>
+        </header>
+
+        <!-- Adicionar tarefa -->
+        <section class="newtask">
+            <div id="newTaskContainer">
+
+                <!-- Card com título Nova Tarefa -->
+                <div class="novaTarefa">
+                    Nova <br>
+                    tarefa
+                </div>
+
+                <!-- Inputs de Nova Tarefa -->
+                <div id="task-form">
+                    <input type="date" id="t_date" required>
+                    <input type="text" id="t_assignedto" placeholder="Responsável" required>
+                    <input type="text" id="t_title" placeholder="Tarefa" required>
+                    <input type="text" id="t_description" placeholder="Descrição até 200 caracteres">
+                    <button id="btnewtask" class="addBtn">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela com lista de tarefas -->
+        <section class="taskarea">
+            <div id="tasktablecontainer">
+                <table id="t_table">
+
+                    <!-- Cabeçalho da tabela -->
+                    <thead id="t_header">
+                        <tr>
+                            <th class="thfeita">
+                            </th>
+                            <th class="thprazo">
+                                Prazo
+                            </th>
+                            <th class="thresponsavel">
+                                Responsável
+                            </th>
+                            <th class="thtitulo">
+                                Tarefa <span class="toggle-all-desc"><a href="#" id="show-desc">Expandir/ </a><a href="#" class="hide-desc">Recolher</a>
+                                </span>
+                            </th>
+                            <th class="thdeltaskbt">
+                                <button id="delete-all-btn" class="addBtn"></button>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- Área a ser populada com tarefas -->
+                    <tbody id="task-list">
+
+                    </tbody>
+                </table>
+
+                <!-- Mensagem visível apenas quando a tabela está vazia -->
+                <div id="noRowsMessage" class="noTaskHidden">
+                    Não há tarefas!
+                </div>
+                
+            </div>
+        </section>
+    </div>   
+
+    <script src="script.js"></script> 
+
+</body>
+</html>

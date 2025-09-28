@@ -1,0 +1,438 @@
+html {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-color:#f0f0f0;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    width: 950px;
+    background-color: white;
+    padding: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+
+/* 
+----------------------------------------------------------------------------------
+ESTILOS DO CABEÇALHO
+----------------------------------------------------------------------------------
+*/
+
+header {
+    width: 820px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    font-family: "Alegreya", serif;
+    color: black;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: -20px;
+}
+
+header h2 {
+    font-family: "Alegreya Sans", sans-serif;
+    color:black;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+
+/* 
+----------------------------------------------------------------------------------
+ESTILOS DA SEÇÃO DE ADICIONAR NOVA TAREFA
+----------------------------------------------------------------------------------
+*/
+
+.newtask {
+
+    width: 860px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+#newTaskContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* estilos do card título "Nova Tarefa" */
+
+.novaTarefa {
+    width: 200px;
+    height: 110px;
+    padding-top: 15px;
+    padding-right: 15px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    line-height: 45px;
+    font-family: "Alegreya", serif;
+    text-align: right;
+    vertical-align: middle;
+    border-radius: 8px;
+}
+
+.novatarefa h2 {
+    padding-left: 8px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Alegreya", serif;
+    background-color: black;
+    color: white;
+    width: 860px;
+    text-align: center;
+}
+
+
+/* estilos dos campos de input */
+
+#task-form {
+    width: 600px;
+
+}
+
+#t_date {
+    width: 120px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+#t_assignedto {
+    width: 140px;
+    height: 25px;
+    margin-bottom: 10px;    
+    margin-right: 5px;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+#t_title {
+    width: 280px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-right: 5px;   
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+#t_description {
+    width: 574px;
+    height: 25px;
+    margin-bottom: 10px; 
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+#btnewtask {
+    width: 584px;
+    height: 35px;
+    margin-bottom: 5px;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+
+
+/* 
+----------------------------------------------------------------------------------
+ESTILOS DA SEÇÃO DE LISTA DE TAREFAS
+----------------------------------------------------------------------------------
+*/
+
+#tasktablecontainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 860px;
+}
+
+.taskarea {
+    text-align: center;
+    padding-bottom: 80px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taskarea h2 {
+    padding-left: 8px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Alegreya", serif;
+    background-color: black;
+    color: white;
+    width: 860px;
+    text-align: center;
+}
+
+
+
+/* Estilos da tabela */
+
+.taskarea table {
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px black;
+    color: #404040;
+}
+
+
+.taskarea thead {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Alegreya Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: #dcdcdc;
+    color: black;
+    height: 50px;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+}
+
+.taskarea tr {
+    height: 50px;
+    border-bottom: 1px #bebebe solid;
+
+    
+}
+
+.taskarea td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.taskarea tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+
+/* Células do cabeçalho da tabela */
+
+.thfeita {
+    width: 25px;
+}
+
+.thprazo {
+    width: 80px;
+}
+
+.thresponsavel {
+    width: 140px;
+}
+
+.thtitulo {
+    width: 500px;
+    padding-right: 10px;
+}
+
+.toggle-all-desc {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.thdeltaskbt {
+    width: 50px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+
+/* botão de deletar todas linhas */
+
+#delete-all-btn {
+  background-color: #bebebe;
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  background-image: url('assets/icons/delete.png');
+  background-size: 25px 25px; 
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  vertical-align: middle;
+}
+
+#delete-all-btn:hover {
+  background-image: url('assets/icons/recycle-bin.png');
+}
+
+
+/* estilos das células de Tarefa + Descrição */
+
+.title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #404040;
+}
+
+.description {
+    font-size: 16px;
+    color: #585858;
+
+}
+
+.toggle-desc{
+    font-size: 14px;
+}
+
+.description-hidden {
+    display: none;
+}
+
+
+/* botões da ultima célula de cada linha */
+
+.edit-btn {
+    background-color: #bebebe;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-image: url('assets/icons/pen.png');
+    background-size: 25px 25px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+}
+
+
+.delete-btn {
+    background-color: #bebebe;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-image: url('assets/icons/remove.png');
+    background-size: 25px 25px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+}
+
+.ok-btn {
+    background-color: #bebebe;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-image: url('assets/icons/yes.png');
+    background-size: 25px 25px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+}
+
+.cancel-btn {
+background-color: #bebebe;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-image: url('assets/icons/cross.png');
+    background-size: 25px 25px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+}
+
+
+/* campos de input da linha em modo editável */
+
+.edit-date {
+    width: 80px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-right: 5px;   
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.edit-assignedto {
+    width: 180px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-right: 5px;   
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.edit-title {
+    width: 300px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-right: 5px;   
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+.edit-description {
+    width: 450px;
+    height: 25px;
+    margin-bottom: 10px; 
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+
+/* 
+----------------------------------------------------------------------------------
+ESTILOS DA MENSAGEM DE "NÃO HÁ TAREFAS"
+----------------------------------------------------------------------------------
+*/
+
+#noRowsMessage {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.noTaskHidden {
+  display: none;
+}
+
