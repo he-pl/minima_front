@@ -8,7 +8,7 @@
 Consiste de um *front end* criado em HTML, CSS e Javascript (sem frameworks), alimentado por um *back end* com uma API em Python e um banco de dados simples.
 
 > **Este repositório contém apenas o *front end* da aplicação.**
-> O *back end* está publicado e explicado [neste repositório](http://placeholder.com).
+> O *back end* está publicado e explicado [neste repositório](https://github.com/he-pl/minima_back).
 
 ---
 ## VISÃO GERAL
@@ -48,3 +48,4 @@ Algumas mudanças no aplicativo cogitadas para o futuro:
 
 
 Fazer o download do projeto e abrir o arquivo index.html no seu browser.
+
